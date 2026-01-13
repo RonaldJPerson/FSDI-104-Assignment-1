@@ -55,8 +55,8 @@ let newPet = new Pet(name, age, breed, gender, service);
 console.log(newPet);
 
 //create the row and add it to the table 
-const row = document.createElement("tr");
-row.innerHTML = `
+const displayRow = document.createElement("tr");
+displayRow.innerHTML = `
     <td>${petsList.length}</td>
     <td>${newPet.name}</td>
     <td>${newPet.age}</td>
@@ -65,7 +65,7 @@ row.innerHTML = `
     <td>${newPet.service}</td>
     <td><button class="btn btn-danger" onclick="deletePet(${petsList.length - 1})">Delete</button></td>
 `;
-petTable.appendChild(row);
+petTable.appendChild(displayRow);
 
 
 displayPets();
