@@ -231,6 +231,68 @@ footer p {
     margin: 0;
 }
 
+.pet-table-section {
+    max-width: 1000px;
+    margin: 40px auto !important;
+    padding: 40px !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(30, 95, 116, 0.15);
+    border: 2px solid rgba(30, 95, 116, 0.1);
+}
+
+.pet-table-section .table {
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
+.pet-table-section .table-dark {
+    background: linear-gradient(90deg, #1e5f74 0%, #16455e 100%);
+    color: #fff;
+}
+
+.pet-table-section .table-dark th {
+    font-weight: 600;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    background: inherit;
+    color: #fff;
+}
+
+.pet-table-section .table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.pet-table-section .table tbody tr:hover {
+    background-color: rgba(30, 95, 116, 0.08);
+}
+
+.pet-table-section .table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    color: #16455e;
+    font-weight: 500;
+}
+
+.pet-table-section .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(232, 238, 245, 0.5);
+}
+
+.pet-table-section .table-bordered {
+    border: 1px solid rgba(30, 95, 116, 0.2);
+}
+
+.pet-table-section .table-bordered thead th {
+    border-color: #1e5f74;
+}
+
+.pet-table-section .table-bordered td,
+.pet-table-section .table-bordered th {
+    border-color: rgba(30, 95, 116, 0.15);
+}
+
 .pet-gallery {
     max-width: 900px;
     margin: 40px auto !important;
