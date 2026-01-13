@@ -1,5 +1,13 @@
-// Create pet objects
-const pet1 = {
+
+function Pet(name, age, breed, gender, service) {
+    this.name = name;
+    this.age = age;
+    this.breed = breed;
+    this.gender = gender;
+    this.service = service;
+}
+
+let pet1 = {
     name: "Whiskers",
     age: 3,
     gender: "Female",
@@ -7,7 +15,7 @@ const pet1 = {
     breed: "Persian Cat"
 };
 
-const pet2 = {
+let pet2 = {
     name: "Buddy",
     age: 5,
     gender: "Male",
@@ -15,7 +23,7 @@ const pet2 = {
     breed: "Golden Retriever"
 };
 
-const pet3 = {
+let pet3 = {
     name: "Mittens",
     age: 2,
     gender: "Female",
@@ -23,16 +31,20 @@ const pet3 = {
     breed: "Tabby Cat"
 };
 
-// Create array with pet objects
-const petsList = [pet1, pet2, pet3];
+let pet4 = new Pet("Max", 4, "German Shepherd", "Male", "Full Grooming");
+let pet5 = new Pet("Luna", 3, "Siamese Cat", "Female", "Bath and Trim");
+let pet6 = new Pet("Rocky", 6, "Bulldog", "Male", "Nail Trim");
 
-// Function to display pet names
+
+let petsList = [pet1, pet2, pet3];
+
+
 function displayPets() {
-    const petNamesDiv = document.getElementById("petNames");
-    const olList = document.createElement("ol");
+    let petNamesDiv = document.getElementById("petNames");
+    let olList = document.createElement("ol");
     
     for (let i = 0; i < petsList.length; i++) {
-        const listItem = document.createElement("li");
+        let listItem = document.createElement("li");
         listItem.textContent = petsList[i].name;
         olList.appendChild(listItem);
     }
@@ -40,5 +52,4 @@ function displayPets() {
     petNamesDiv.appendChild(olList);
 }
 
-// Call the function when the page loads
 displayPets();
