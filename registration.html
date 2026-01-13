@@ -44,7 +44,9 @@
 
     <section class="registration-form-section">
       <h2>Registration</h2>
+      
       <form class="row g-3">
+        
         <div class="col-md-6">
           <label for="petName" class="form-label">Pet Name</label>
           <input type="text" class="form-control" id="petName" placeholder="Enter Pet Name" required>
@@ -77,31 +79,36 @@
           </select>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Register</button>
-          <button type="reset" class="btn btn-secondary">Reset</button>
+          <button class="btn btn-primary m-1" type="submit" onclick="registerPet(event)">Register</button>
+          <button class="btn btn-secondary m-1" type="reset">Reset</button>
         </div>
       </form>
+    
     </section>
 
     <section class="pet-table-section">
       <h2>Registered Pets</h2>
+     
       <div class="table-responsive">
         <table class="table table-striped table-hover table-bordered">
           <thead class="table-dark">
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Pet Name</th>
-              <th scope="col">Age</th>
-              <th scope="col">Breed</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Service</th>
+              <th >#</th>
+              <th >Pet Name</th>
+              <th >Age</th>
+              <th >Breed</th>
+              <th >Gender</th>
+              <th >Service</th>
+              <th ></th>
             </tr>
           </thead>
-          <tbody id="petTableBody">
-            <
+
+          <tbody id="registrationTable">
+         
           </tbody>
         </table>
       </div>
+
     </section>
 
     <section class="pet-gallery">
