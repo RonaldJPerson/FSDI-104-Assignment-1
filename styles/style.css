@@ -14,6 +14,21 @@ body {
     overflow-x: hidden;
 }
 
+body.index-page {
+    background: linear-gradient(rgba(245, 247, 250, 0.85), rgba(232, 238, 245, 0.85)), 
+                url('../images/360_F_531097423_y1scBnLigyQpMNjLmleTWRh96WmULQo8.jpg') center/cover no-repeat fixed;
+}
+
+body.registration-page {
+    background: linear-gradient(rgba(245, 247, 250, 0.85), rgba(232, 238, 245, 0.85)), 
+                url('../images/360_F_531097423_y1scBnLigyQpMNjLmleTWRh96WmULQo8.jpg') center/cover no-repeat fixed;
+}
+
+body.services-page {
+    background: linear-gradient(rgba(245, 247, 250, 0.85), rgba(232, 238, 245, 0.85)), 
+                url('../images/360_F_531097423_y1scBnLigyQpMNjLmleTWRh96WmULQo8.jpg') center/cover no-repeat fixed;
+}
+
 body::before {
     content: '🐾';
     position: fixed;
@@ -218,7 +233,6 @@ footer p {
     margin: 0;
 }
 
-/* Pet Gallery Section */
 .pet-gallery {
     max-width: 900px;
     margin: 40px auto !important;
@@ -291,7 +305,6 @@ footer p {
     text-align: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2rem;
